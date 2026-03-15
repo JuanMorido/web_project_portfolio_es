@@ -1,0 +1,12 @@
+.section {
+  padding: 72px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.section__title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 44px;
+}

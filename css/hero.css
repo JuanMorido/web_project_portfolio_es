@@ -1,0 +1,135 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 72px 0 80px;
+}
+.hero__content {
+  flex: 1;
+}
+
+.hero__name {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #e8f4f8 0%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__role {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.hero__role .sep {
+  margin: 0 10px;
+  color: var(--text-muted);
+}
+
+.hero__bio {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: rgba(232, 244, 248, 0.7);
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+
+.hero__links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.btn-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 0;
+  position: relative;
+  transition: color 0.2s;
+}
+.btn-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s;
+}
+.btn-link:hover {
+  color: var(--accent-green);
+}
+.btn-link:hover::after {
+  transform: scaleX(1);
+}
+
+.hero__photo-wrap {
+  flex-shrink: 0;
+}
+.hero__photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+    linear-gradient(135deg, var(--accent-green), var(--accent-cyan)) border-box;
+  box-shadow:
+    0 0 0 8px rgba(0, 255, 136, 0.05),
+    0 0 50px rgba(0, 255, 136, 0.12),
+    0 0 100px rgba(0, 212, 255, 0.07);
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: var(--accent-green);
+  color: #0a0a0f;
+  border: 1px solid var(--accent-green);
+  border-radius: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.btn-cv svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.btn-cv:hover {
+  background: transparent;
+  color: var(--accent-green);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  transform: translateY(-2px);
+}

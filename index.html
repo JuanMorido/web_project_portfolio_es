@@ -1,0 +1,398 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Camilo Escobar — Portfolio</title>
+    <link rel="icon" type="image/png" href="engineering.ico" />
+    <link rel="apple-touch-icon" href="engineering.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="lang-bar">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">
+        EN
+      </button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" id="btn-es" onclick="setLang('es')">ES</button>
+    </div>
+
+
+    <div class="page">
+
+      <section class="hero" id="home">
+        <div class="hero__content">
+          <h1 class="hero__name">Juan Camilo Escobar</h1>
+
+
+          <p class="hero__role">
+            <span data-en="Chemical Engineer" data-es="Ingeniero Químico"
+              >Chemical Engineer</span
+            >
+            <span class="sep">|</span>
+            <span data-en="Web Developer" data-es="Desarrollador Web"
+              >Web Developer</span
+            >
+            <span class="sep">|</span>
+            <span data-en="HTML &amp; CSS" data-es="HTML &amp; CSS"
+              >HTML &amp; CSS</span
+            >
+          </p>
+
+          <p
+            class="hero__bio"
+            data-en="Chemical engineer transitioning to junior web developer after a decade as a process engineer on large-scale power generation projects across Latin America. Throughout my career I have learned to overcome obstacles and solve problems the right way: structured thinking, attention to detail, and a focus on making things work. I plan to bring all of that experience to bear as I take on this new path."
+            data-es="Ingeniero químico en transición a desarrollador web junior tras una década como ingeniero de procesos en proyectos de generación energética a gran escala en Latinoamérica. A lo largo de mi carrera he aprendido a superar obstáculos y resolver problemas como es debido: pensamiento estructurado, atención al detalle y foco en que las cosas funcionen de verdad. Planeo aplicar toda esa experiencia para obtener los mejores resultados en este nuevo camino."
+          >
+            Chemical engineer transitioning to junior web developer after a
+            decade as a process engineer on large-scale power generation
+            projects across Latin America. Throughout my career I have learned
+            to overcome obstacles and solve problems the right way: structured
+            thinking, attention to detail, and a focus on making things work. I
+            plan to bring all of that experience to bear as I take on this new
+            path.
+          </p>
+
+
+          <nav class="hero__links">
+            <a
+              href="https://github.com/JuanMorido"
+              class="btn-link"
+              target="_blank"
+              rel="noopener"
+              data-en="GitHub"
+              data-es="GitHub"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/juanescobariq/"
+              class="btn-link"
+              target="_blank"
+              rel="noopener"
+              data-en="LinkedIn"
+              data-es="LinkedIn"
+              >LinkedIn</a
+            >
+            <a
+              href="#contact"
+              class="btn-link"
+              data-en="Contact me"
+              data-es="Contáctame"
+              >Contact me</a
+            >
+            <a
+              href="files/CV_JuanEscobar_EN.pdf"
+              class="btn-cv"
+              download
+              data-href-en="files/CV_JuanEscobar_EN.pdf"
+              data-href-es="files/CV_JuanEscobar_ES.pdf"
+            >
+              <span data-en="Download CV" data-es="Descargar HV"
+                >Download CV</span
+              >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 4v12" />
+                <path d="M8 13l4 4 4-4" />
+                <path d="M4 20h16" />
+              </svg>
+            </a>
+          </nav>
+        </div>
+
+        <div class="hero__photo-wrap">
+          <img
+            src="images/Juan_Profile.jpeg"
+            alt="Juan Camilo Escobar"
+            class="hero__photo"
+          />
+        </div>
+      </section>
+      <section class="section" id="skills">
+        <h2
+          class="section__title"
+          data-en="Skills &amp; Tools"
+          data-es="Habilidades y herramientas"
+        >
+          Skills &amp; Tools
+        </h2>
+
+
+        <p
+          class="skills__group-label"
+          data-en="Web Development"
+          data-es="Desarrollo Web"
+        >
+          Web Development
+        </p>
+        <div class="skills__icon-group" style="margin-bottom: 36px">
+          <div class="skill-icon" title="HTML5">
+            <img src="images/html5.svg" alt="HTML5" />
+          </div>
+          <div class="skill-icon" title="CSS3">
+            <img src="images/css3.svg" alt="CSS3" />
+          </div>
+          <div class="skill-icon" title="Git">
+            <img src="images/git.svg" alt="Git" />
+          </div>
+          <div class="skill-icon" title="GitHub">
+            <img src="images/github.svg" alt="GitHub" />
+          </div>
+          <div class="skill-icon" title="Python">
+            <img src="images/python.svg" alt="Python" />
+          </div>
+          <div class="skill-icon" title="Claude">
+            <img src="images/claude.svg" alt="Claude" />
+          </div>
+          <div class="skill-icon" title="ChatGPT">
+            <img src="images/ChatGPT-Logo.svg" alt="ChatGPT" />
+          </div>
+        </div>
+
+        <p
+          class="skills__group-label"
+          style="margin-top: 8px"
+          data-en="Engineering Software"
+          data-es="Software de Ingeniería"
+        >
+          Engineering Software
+        </p>
+        <div class="skills__icon-group">
+          <div class="skill-icon" title="AutoCAD">
+            <img src="images/autocad.svg" alt="AutoCAD" />
+          </div>
+
+          <div class="skill-icon" title="Aspen">
+            <img src="images/AspenTech.svg" alt="Aspen" />
+          </div>
+
+          <div class="skill-icon" title="Thermoflow Suite">
+            <img src="images/thermoflow.svg" alt="Thermoflow" />
+          </div>
+
+          <div class="skill-icon" title="MS Project">
+            <img src="images/MS_Project.svg" alt="MS Project" />
+          </div>
+
+          <div class="skill-icon" title="Epanet 2">
+            <img src="images/EPA_logo.svg" alt="epanet2" />
+          </div>
+
+          <div class="skill-icon" title="Office 365">
+            <img src="images/Microsoft_365.svg" alt="Office" />
+          </div>
+
+          <div class="skill-icon" title="Matlab">
+            <img src="images/MATLAB.svg" alt="Matlab" />
+          </div>
+        </div>
+
+        <p
+          class="skills__group-label"
+          style="margin-top: 36px"
+          data-en="Languages"
+          data-es="Idiomas"
+        >
+          Languages
+        </p>
+        <div class="skills__extra">
+          <span
+            class="skill-chip"
+            data-en="Spanish — Native"
+            data-es="Español — Nativo"
+            >Spanish — Native</span
+          >
+          <span
+            class="skill-chip"
+            data-en="English — C1 (IELTS)"
+            data-es="Inglés — C1 (IELTS)"
+            >English — C1 (IELTS)</span
+          >
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2
+          class="section__title"
+          data-en="Featured Projects"
+          data-es="Proyectos destacados"
+        >
+          Featured Projects
+        </h2>
+
+        <div class="projects__grid">
+
+<div class="project-card">
+  <div class="project-card__preview">
+    <img src="images/coffeeshop-preview.png" alt="Triple Peaks Coffee Shop" style="width:100%; height:100%; object-fit:cover;"/>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__tags">
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+    </div>
+    <h3 class="project-card__title"
+        data-en="Triple Peaks Coffee Shop"
+        data-es="Cafetería Triple Peaks">Triple Peaks Coffee Shop</h3>
+    <p class="project-card__desc"
+       data-en="Responsive landing page for a coffee shop following a design brief. Semantic HTML structure, Flexbox layout, contact form and GitHub Pages deployment."
+       data-es="Landing page responsiva para una cafetería siguiendo un brief de diseño. Estructura HTML semántica, maquetación con Flexbox, formulario de contacto y despliegue en GitHub Pages.">
+      Responsive landing page for a coffee shop following a design brief. Semantic HTML structure, Flexbox layout, contact form and GitHub Pages deployment.
+    </p>
+  </div>
+  <div class="project-card__links">
+    <a href="https://juanmorido.github.io/web_project_coffeeshop_es/"
+       class="project-card__link" target="_blank" rel="noopener"
+       data-en="Live demo" data-es="Demo en vivo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      Live demo
+    </a>
+    <a href="https://github.com/JuanMorido/web_project_coffeeshop_es"
+       class="project-card__link" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      GitHub
+    </a>
+  </div>
+</div>
+
+
+<div class="project-card">
+  <div class="project-card__preview" style="background: linear-gradient(135deg,#1e1b4b 0%,#312e81 50%,#4c1d95 100%);">
+    <span class="project-card__preview-placeholder">&lt;/&gt;</span>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__tags">
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+    </div>
+    <h3 class="project-card__title"
+        data-en="Coming Soon" data-es="Próximamente">Coming Soon</h3>
+    <p class="project-card__desc"
+       data-en="Next bootcamp project — in progress."
+       data-es="Próximo proyecto del bootcamp — en progreso.">
+      Next bootcamp project — in progress.
+    </p>
+  </div>
+  <div class="project-card__links">
+  <span class="project-card__link project-card__link--disabled"
+        data-en="Live demo" data-es="Demo en vivo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    Live demo
+  </span>
+  <span class="project-card__link project-card__link--disabled">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+    GitHub
+  </span>
+</div>
+</div>
+</section>
+
+</div>
+
+    <section class="contact-section" id="contact">
+      <h2 class="contact-section__title" data-en="Contact" data-es="Contacto">
+        Contact
+      </h2>
+
+
+      <div class="contact-section__email-wrap">
+        <a href="mailto:Juanesco95@gmail.com" class="contact-section__email"
+          >Juanesco95@gmail.com</a
+        >
+        <a href="mailto:Juanesco95@hotmail.com" class="contact-section__email"
+          >Juanesco95@hotmail.com</a
+        >
+      </div>
+
+      <div class="contact-section__socials">
+        <a
+          href="https://www.linkedin.com/in/juanescobariq/"
+          class="social-link"
+          target="_blank"
+          rel="noopener"
+          title="LinkedIn"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a
+          href="https://github.com/JuanMorido"
+          class="social-link"
+          target="_blank"
+          rel="noopener"
+          title="GitHub"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/juanescoji/"
+          class="social-link"
+          target="_blank"
+          rel="noopener"
+          title="Instagram"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        <a
+          href="https://x.com/juancax77"
+          class="social-link"
+          target="_blank"
+          rel="noopener"
+          title="X (Twitter)"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L2.25 2.25h6.137l4.263 5.634zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>&copy; 2026 JuanMorido</span>
+      <span data-en="Acacías, Meta, Colombia" data-es="Acacías, Meta, Colombia"
+        >Acacías, Meta, Colombia</span
+      >
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <a
+      href="https://wa.me/573218042817"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      title="Chat on WhatsApp"
+    >
+      <img src="images/whatsapp.svg" alt="WhatsApp" />
+    </a>
+  </body>
+</html>
